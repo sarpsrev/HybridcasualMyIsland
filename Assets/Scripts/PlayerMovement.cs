@@ -31,6 +31,8 @@ public class PlayerMovement : MonoBehaviour
         movePlayer();
     }
 
+
+    //Setting Vector3 from JoystickCOntroller to our CharacterController
     private void movePlayer()
     {
         moveVector = joystickController.getMovePosition() * moveSpeed * Time.deltaTime;

@@ -17,7 +17,7 @@ public class PlayerAnimationContol : MonoBehaviour
     {
         
     }
-
+    // RunningAnim starts when Vector3 have magnitude otherwise IdleAnim plays
     public void AnimControl(Vector3 move)
     {
         if(Vector3.Magnitude(move)>0)
