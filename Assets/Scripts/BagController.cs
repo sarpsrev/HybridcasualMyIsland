@@ -29,6 +29,7 @@ public class BagController : MonoBehaviour
         {
             for (int i = productList.Count-1; i >= 0; i--)
             {
+                SellProducts(productList[i]);
                 Destroy(bag.transform.GetChild(i).gameObject);
                 productList.RemoveAt(i);
             }
@@ -37,6 +38,12 @@ public class BagController : MonoBehaviour
 
         }
         
+    }
+
+    private void SellProducts(ProductDatas productDatas)
+    {
+        CashManager.instance.exchangeProduct(productDatas);
+
     }
 
     public void addProductToBag(ProductDatas productDatas)

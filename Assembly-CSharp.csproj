@@ -67,6 +67,7 @@
      <Compile Include="Assets/Scripts/PlayerAnimationContol.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark01.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TextMeshSpawner.cs" />
+     <Compile Include="Assets/Scripts/LockedObject.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexZoom.cs" />
      <Compile Include="Assets/Scripts/JoystickController.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark02.cs" />
@@ -79,6 +80,8 @@
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/CameraController.cs" />
      <Compile Include="Assets/Scripts/Data/ProductDatas.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark03.cs" />
+     <Compile Include="Assets/Scripts/CashManager.cs" />
+     <Compile Include="Assets/Scripts/UIManager.cs" />
      <Compile Include="Assets/Scripts/PlayerMovement.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextInfoDebugTool.cs" />
      <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />

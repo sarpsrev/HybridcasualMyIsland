@@ -16,6 +16,7 @@ public class JoystickController : MonoBehaviour
     {
         hideJoystick();
         
+        
     }
 
     // Update is called once per frame
@@ -43,7 +44,12 @@ public class JoystickController : MonoBehaviour
 
                 case TouchPhase.Moved:
                 directionChosen = true;
-                movement = touch.deltaPosition;
+
+
+
+
+                //(if you want to add some specific vectors fot delta position open this line)                               //movement = touch.deltaPosition;
+
                 Vector2 movementPos = touch.deltaPosition;
 
                 // Calculating area of joystick outline.               
