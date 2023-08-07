@@ -6,6 +6,7 @@ public class CashManager : MonoBehaviour
 {
     public static CashManager instance;
     private int coins;
+    private string keyCoins = "keyCoins";
 
     void Awake()
     {
@@ -36,6 +37,7 @@ public class CashManager : MonoBehaviour
     private void displayCoinOnScreen()
     {
      UIManager.instance.ShowCoinOnScreen(coins);
+     SaveCash();
     }
 
     private void SpendCoin(int price)
@@ -64,7 +66,8 @@ public class CashManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+      LoadCash();
+      displayCoinOnScreen();   
     }
 
     // Update is called once per frame
@@ -72,4 +75,17 @@ public class CashManager : MonoBehaviour
     {
         
     }
+
+    private void LoadCash()
+    {
+        coins = PlayerPrefs.GetInt(keyCoins,0);
+
+    }
+
+    private void SaveCash()
+    {
+        PlayerPrefs.SetInt(keyCoins,coins);
+
+    }
+
 }
